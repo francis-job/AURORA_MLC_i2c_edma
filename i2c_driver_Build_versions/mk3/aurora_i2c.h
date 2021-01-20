@@ -26,7 +26,8 @@
 #include "fsl_common.h"
 #include "fsl_gpio.h"
 #include "fsl_port.h"
-#include "test_main.h"
+#include "statemachine.h"
+#include "datamanager.h"
 /***********************************
 * Const and Macro Defines
 ***********************************/
