@@ -163,12 +163,7 @@ status_t init_i2c_tranfer()
 	  gpio_pin_config_t jumper_config = {
 	  		    		kGPIO_DigitalInput,
 	  					0,
-	  		    	    };
-
-  	/* Init I2C hardware. */
-      BOARD_InitBootPins();
-      BOARD_InitBootClocks();
-      BOARD_InitDebugConsole();
+	  		    	    };  	
       /*JUMPER INITIALIZATION AND STATE CHECK*/
       GPIO_PinInit(SYSTEM_JUMPER_PORT,SYSTEM_JUMPER_PIN,&jumper_config);
       uint16_t state = GPIO_PinRead(SYSTEM_JUMPER_PORT,SYSTEM_JUMPER_PIN);
