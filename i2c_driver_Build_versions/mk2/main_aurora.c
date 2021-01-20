@@ -15,6 +15,10 @@ int main()
 	uint16_t config;
 	config_ascii_t configuration;
 	command_ascii_t command;
+	/* Init I2C hardware. */
+      BOARD_InitBootPins();
+      BOARD_InitBootClocks();
+      BOARD_InitDebugConsole();
 
 	config = init_i2c_tranfer();
 	if(config == MASTER_CONFIGURED ){
